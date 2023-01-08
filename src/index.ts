@@ -6,10 +6,13 @@ import { User } from "./models/User";
 // 	age: 23
 // });
 
-axios.get('http://localhost:3000/users')
-.then(( users ) => {
-	console.log(users.data);
-})
-.catch(( error ) => {
-	console.log(error);
-});
+//axios.get('http://localhost:3000/users')
+//.then(( users ) => {
+//	console.log(users.data);
+//})
+//.catch(( error ) => {
+//	console.log(error);
+//});
+
+const user = new User({ name: 'Aakash', age: 22 });
+
